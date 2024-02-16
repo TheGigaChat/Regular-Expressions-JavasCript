@@ -1,0 +1,73 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  font: inherit;
+}
+
+/* variables */
+
+:root {
+  /* colors */
+  --BackColor: rgb(227, 236, 240);
+  --white: snow;
+  --black: #202020;
+  --test: lightcoral;
+  --invalid: red;
+}
+
+/* main */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  letter-spacing: 1px;
+}
+
+main {
+  min-height: 100vh;
+  background-color: var(--BackColor);
+
+  display: grid;
+  place-content: center;
+}
+
+.main__section form {
+  display: grid;
+  place-content: center;
+  /* background-color: green; */
+}
+
+.main__section :is(input, label) {
+  margin: 0.25rem;
+}
+
+.main__section input {
+  padding: 0.5rem;
+  border: 2px solid var(--black);
+  border-radius: 15px;
+}
+
+/* utilities */
+
+.glue {
+  color: transparent;
+  margin: 0.25rem;
+}
+
+.invalid {
+  color: var(--invalid);
+}
+
+.hide {
+  color: transparent;
+}
+
+.normal {
+  color: var(--black);
+}
